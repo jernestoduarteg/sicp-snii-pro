@@ -1,0 +1,32 @@
+{
+  "name": "sicp-snii-pro",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "SICP-SNII Pro — Sistema Inteligente para la Carrera del Personal Investigador (SECIHTI 2026)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:standalone": "vite build --config vite.config.standalone.js && node scripts/inline-build.js",
+    "preview": "vite preview",
+    "dist": "npm run build:standalone && open dist/index.html",
+    "lint": "eslint js/",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "SNII",
+    "SECIHTI",
+    "investigacion",
+    "academia"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4",
+    "vite": "^6.4.3",
+    "vitest": "^3.2.6"
+  }
+}
